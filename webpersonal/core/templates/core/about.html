@@ -1,0 +1,26 @@
+      
+{% extends 'core/base.html' %}
+
+{% block title %}acerca de {% endblock%}
+
+{% block background %}{% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+    <h1>Acerca de</h1>
+    <span class="subheading">Biografía</span>
+{% endblock %}
+{% block content %}
+    <div class="container">
+      <div class="row">   
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+          <img class="img-fluid avatar" src="{% static 'core/img/avatar1.jpg' %}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+          <h2 class="section-heading">INGRID LOOR</h2>   
+          <p> Naci en ecuador, manabi, portoviejo, soy una chica muy amigable y estudio en la utm.</p>
+          <p>me gusta mucho comer y dormir, tengo 21 años, soy de estatura media y tengo novio.</p>
+        </div>
+      </div>  
+    </div>
+{% endblock %}
+        
